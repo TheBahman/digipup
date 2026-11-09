@@ -1,0 +1,25 @@
+# Digipup — ربات رصد قیمت دیجی‌کالا
+# نصب: pip install -r requirements.txt
+
+# ربات تلگرام (نسخه 20+). اکسترا [job-queue] برای JobQueue داخلی لازم است
+# و APScheduler را به‌صورت خودکار نصب می‌کند.
+python-telegram-bot[job-queue]>=20.8,<21.0
+
+# پورت پایتونی Puppeteer برای کنترل Chrome/Chromium
+pyppeteer>=1.0.2,<2.0
+
+# دسترسی async به SQLite
+aiosqlite>=0.19
+
+# خواندن فایل .env
+python-dotenv>=1.0
+
+# تحلیل HTML صفحه‌ی محصول (پارس JSON-LD، __NEXT_DATA__ و سلکتورهای CSS)
+beautifulsoup4>=4.12
+lxml>=4.9
+
+# تبدیل ارقام و تاریخ فارسی (در نبودش، توابع جایگزین داخلی استفاده می‌شوند)
+persiantools>=2.4
+
+# داده‌ی منطقه‌ی زمانی برای zoneinfo روی ویندوز و ایمیج‌های لینوکسی سبک
+tzdata>=2023.3
